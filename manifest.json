@@ -1,0 +1,44 @@
+{
+  "name": "Youtube Controller",
+  "version": "1.0",
+  "description": "Control your youtube from anywhere on your PC!",
+  "permissions": ["tabs", "https://www.youtube.com/watch?*"],
+  "commands": {
+    "next": {
+      "suggested_key": {
+        "default": "MediaNextTrack"
+      },"description": "Next Track",
+      "global":true
+    },
+    "previous": {
+      "suggested_key": {
+        "default": "MediaPrevTrack"
+      },"description": "Previous Track",
+      "global":true
+    },"playpause": {
+      "suggested_key": {
+        "default": "MediaPlayPause"
+      },"description": "Play/Pause Track",
+      "global":true
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2
+}
